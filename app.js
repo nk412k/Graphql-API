@@ -97,7 +97,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    "mongodb+srv://Nokhalal:Nokhalal@cluster0.grwrf.mongodb.net/socialbook?retryWrites=true&w=majority"
+    "mongodb+srv://@cluster0.grwrf.mongodb.net/socialbook?retryWrites=true&w=majority"
   )
   .then((result) => {
     const server = app.listen(8080);
